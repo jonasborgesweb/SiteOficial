@@ -1,0 +1,23 @@
+.footer{
+    background-color: $blue;
+    padding: 2rem 0; 
+    &__wrapper{
+        @include flex;
+        @include justify-space-between;
+        @include align-center;
+    }
+
+    &__text{
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: $white;
+    }
+}
+
+.logo-footer{
+    width: 170px;
+
+    &__image{
+        width: 100%;
+    }
+}

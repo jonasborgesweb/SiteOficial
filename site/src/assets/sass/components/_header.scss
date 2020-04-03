@@ -1,0 +1,36 @@
+.header{
+
+    &__wrapper{
+        @include flex;
+        @include align-center;
+        @include justify-space-between;
+    }
+}
+
+.logo{
+    width: 100px;
+    &__image{
+        width: 100%;
+    }
+}
+
+.navigation{
+
+    &__button{
+        outline: 0;
+        box-sizing: border-box;
+        font-family: $font;
+        cursor: pointer;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: none;
+        background-color: $green;
+
+        
+        &--icon{
+            width: 30px;
+            height: 30px;
+        }
+    }
+}

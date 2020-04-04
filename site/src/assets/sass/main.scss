@@ -3,8 +3,12 @@
 
 @import "base/base";
 @import "base/utilities";
+@import "base/typography";
 
 @import "components/header";
 @import "components/footer";
+@import "components/buttons";
 
-@import "pages/home";
+//Page Home
+@import "pages/home/partial/banner";
+@import "pages/home/partial/about";

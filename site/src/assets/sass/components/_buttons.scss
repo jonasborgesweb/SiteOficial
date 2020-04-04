@@ -1,0 +1,33 @@
+.button{
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 30px;
+    color: $white;
+    width: 200px;
+    padding: 1.5rem 0;
+    text-align: center;
+    display: block;
+    border-radius: 50px;
+    box-shadow: 0 5px 10px rgba($black,.3);
+    transition: .3s ease;
+
+    &:hover{
+        transform: translateY(-5px);
+
+        @media screen and (max-width: 1000px){
+            transform: translateY(0);
+        }
+    }
+
+    &--green{
+        background-color: $green;
+    }
+
+    &--pink{
+        background-color: $pink;
+    }
+
+    &--blue{
+        background-color: $blue;
+    }
+}

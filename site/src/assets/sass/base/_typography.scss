@@ -1,0 +1,59 @@
+.title{
+    font-size: 4.2rem;
+    font-weight: 600;
+
+    @include breakpoint(mobile){
+        font-size: 3rem;
+    }
+
+    &--green{
+        color: $green;
+    }
+
+    &--white{
+        color: $white;
+    }
+
+    &--blue{
+        color: $blue;
+    }
+
+    &--pink{
+        color: $pink;
+    }
+}
+
+.subtitle{
+    font-size: 3.6rem;
+    font-weight: 600;
+
+    @include breakpoint(mobile){
+        font-size: 2rem;
+    }
+
+    &--green{
+        color: $green;
+    }
+
+    &--white{
+        color: $white;
+    }
+
+    &--blue{
+        color: $blue;
+    }
+
+    &--pink{
+        color: $pink;
+    }
+}
+
+.description{
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 30px;
+    
+    &--blue{
+        color: $blue;
+    }
+}

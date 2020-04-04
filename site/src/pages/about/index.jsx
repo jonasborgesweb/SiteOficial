@@ -2,16 +2,16 @@ import React, { Component } from 'react'
 
 import Banner from './../home/partial/banner'
 
-class Blog extends Component {
+class About extends Component {
 
     render() {
         return (
             <>
                 <Banner />
-                <h1>Blog</h1>
+                <h1>About</h1>
             </>
         )
     }
 }
 
-export default Blog;
+export default About;

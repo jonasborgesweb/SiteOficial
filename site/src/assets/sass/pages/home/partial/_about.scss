@@ -1,0 +1,102 @@
+.about{
+    padding: 7rem 0 13rem;
+    background-color: $white;
+    &__wrapper{
+        @include flex;
+        @include justify-space-between;
+        @include align-center;
+
+        @media screen and (max-width: 1000px){
+            @include flex-wrap;
+        }
+    }
+
+    &__left{
+        flex: 0 0 43%;
+
+        @media screen and (max-width: 1000px){
+            flex: 0 0 80%;
+            margin: 0 auto 3rem;
+        }
+
+        @include breakpoint(small-tablet){
+            flex: 0 0 100%;
+        }
+
+    }
+
+    &__right{
+        flex: 0 0 54%;
+
+        @media screen and (max-width: 1000px){
+            flex: 0 0 80%;
+            margin: 0 auto;
+        }
+
+        @include breakpoint(small-tablet){
+            flex: 0 0 100%;
+        }
+    }
+
+    &__img{
+        background-image: url('./../../../../images/img-about.jpg');
+        height: 400px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px rgba($black,.5);
+
+        @include breakpoint(mobile){
+            height: 280px;
+        }
+    }
+
+    &__content{
+
+    }
+
+    &__title{
+        margin-bottom: 2.5rem;
+        
+        @include breakpoint(mobile){
+            margin-bottom: 1.5rem;
+        }
+
+
+        &--span{
+            display: block;
+
+            @include breakpoint(desktop){
+                display: inline;
+                margin-left: 1rem;
+            }
+        }
+    }
+
+    &__description{
+        margin-bottom: 3rem;
+    }
+
+    &__bottom{
+        @include flex;
+
+        @include breakpoint(mobile){
+            display: block;
+        }
+    }
+
+    &__buttom{
+        text-decoration: none;
+
+        &:not(:last-child){
+            margin-right: 3rem;
+
+            @include breakpoint(mobile){
+                margin-right: 0;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}

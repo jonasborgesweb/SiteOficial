@@ -5,17 +5,29 @@
         @include flex;
         @include justify-space-between;
         @include align-center;
+
+        @include breakpoint(mobile){
+            display: block;
+        }
     }
 
     &__text{
         font-size: 1.6rem;
         font-weight: 400;
         color: $white;
+
+        @include breakpoint(mobile){
+            text-align: center;
+        }
     }
 }
 
 .logo-footer{
     width: 170px;
+
+    @include breakpoint(mobile){
+        margin: 0 auto 2rem;
+    }
 
     &__image{
         width: 100%;

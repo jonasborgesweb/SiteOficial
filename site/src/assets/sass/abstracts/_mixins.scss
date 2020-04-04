@@ -55,3 +55,31 @@
         -ms-flex-direction: column;
             flex-direction: column;
 }
+
+
+// Mixins Breakpoint
+@mixin breakpoint($point){
+    @if $point == small-mobile {
+        @media (max-width:$small-mobile) { @content }; //450px
+    }
+
+    @if $point == mobile {
+        @media (max-width:$mobile) { @content }; //600px
+    }
+
+    @if $point == small-tablet {
+        @media (max-width:$small-tablet) { @content }; //768px
+    }
+
+    @if $point == tablet {
+        @media (max-width:$tablet) { @content }; //900px
+    }
+
+    @if $point == desktop {
+        @media (max-width:$desktop) { @content }; //1200px
+    }
+
+    @if $point == extra-desktop {
+        @media (min-width:$extra-desktop) { @content }; //1800px
+    }
+}

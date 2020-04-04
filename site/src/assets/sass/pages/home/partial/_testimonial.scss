@@ -1,0 +1,169 @@
+.testimonial{
+    padding: 8rem 0;
+    background-color: #f9f9f9;
+
+    &__top{
+        margin-bottom: 5rem;
+    }
+
+    &__title{
+        text-align: center;
+        margin-bottom: 1.5rem;
+
+        @include breakpoint(mobile){
+            text-align: left;
+        }
+    }
+
+    &__description{
+        text-align: center;
+
+        @include breakpoint(mobile){
+            text-align: left;
+        }
+    }
+
+    &__wrapper{
+
+        .slick-slide{
+            @media screen and (max-width: 1000px){
+                padding: 0 1rem;
+            }
+        }
+
+        .slick-slider .slick-track{
+            padding: 2rem 0;
+        }
+
+        .slick-dots{
+            display: flex!important;
+            @include justify-center;
+            @include align-center;
+
+            list-style: none;
+            margin-top: 2rem;
+
+            li{
+
+                &:not(:last-child){
+                    margin-right: 1rem;
+                }
+
+                button{
+                    background-color: transparent;
+                    color: transparent;
+                    border: 1px solid $pink;
+                    outline: 0;
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    font-size: 5px;
+                }
+
+                &.slick-active{
+
+                    button{
+                        background-color: $pink;
+                    }
+                }
+            }
+        }
+    }   
+
+    &__card{
+        background-color: $white;
+        padding: 4rem 3rem;
+        border-radius: 10px;
+
+        box-shadow: 5px 5px 10px rgba($black, .5);
+
+        width: 95%!important;
+        margin: 0 auto;
+
+        border: 1px solid #ccc;
+
+        outline: 0;
+        transition: .3s ease;
+
+        @media screen and (max-width: 1000px){
+            width: 100%!important
+        }
+
+        &:hover{
+            transform: translateY(-10px);
+
+            @media screen and (max-width: 1000px){
+                transform: translateY(0);
+            }
+        }
+    }
+
+    &__icon{
+        width: 40px;
+        height: 40px;
+
+        margin: 0 auto 2rem;
+
+        &--svg{
+
+        }
+
+        &--path{
+            fill: $pink;
+        }
+    }
+
+    &__text{
+        text-align: center;
+        margin-bottom: 4rem;
+        position: relative;
+
+        &:before{
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -2rem;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 2px;
+            background-color: $pink;
+            border-radius: 10px;
+        }
+    }
+
+    &__bottom{
+
+    }
+
+    &__photo{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin: 0 auto 1.5rem;
+
+        &--one{
+            @extend .testimonial__photo;
+            background-image: url('./../../../../images/testemonial/img-testemonial.jpg');
+        }
+
+        &--two{
+            @extend .testimonial__photo;
+            background-image: url('./../../../../images/testemonial/img-testemonial.jpg');
+        }
+
+        &--three{
+            @extend .testimonial__photo;
+            background-image: url('./../../../../images/testemonial/img-testemonial.jpg');
+        }
+    }
+
+    &__name{
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: $pink;
+        text-align: center;
+    }
+}

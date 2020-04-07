@@ -31,7 +31,7 @@ class Banner extends Component {
                             </li>
                             <li className="banner__item">
                                 <span className="banner__bool"></span>
-                                <span className="banner__text">Javascript</span>
+                                <span className="banner__text">React Native</span>
                             </li>
                         </ul>
                     </div>

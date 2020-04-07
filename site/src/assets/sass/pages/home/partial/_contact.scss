@@ -1,0 +1,116 @@
+.contact{
+    margin-top: 16rem;
+    padding: 0 0 8rem;
+    background-color: #f9f9f9;
+
+    @media screen and (max-width: 1000px){
+        padding: 8rem 0;
+    }
+    &__wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+
+        @media screen and (max-width: 1000px){
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    &__single{
+        align-self: center;
+    }
+    &__content{
+
+    }
+    &__title{
+        text-align: center;
+        margin-bottom: 2.5rem;
+        span{
+            display: block;
+        }
+    }
+    &__description{
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    &__bottom{
+        @include flex;
+        @include justify-center;
+        @include align-center;
+
+        margin-top: 2.5rem;
+
+        @include breakpoint(mobile){
+            display: block;
+        }
+    }
+    &__button{
+        @include flex;
+        @include align-center;
+        @include justify-center;
+        
+        text-decoration: none;
+
+        @include breakpoint(mobile){
+            margin: 0 auto;
+        }
+
+        &:not(:last-child){
+            margin-right: 3rem;
+
+            @include breakpoint(mobile){
+                margin-right: auto;
+                margin-bottom: 2rem;
+            }
+        }
+        &--svg{
+            width: 30px;
+            margin-right: 1rem;
+        }
+
+        &--path{
+            fill: $white;
+        }
+    }
+}
+
+.social{
+    margin-bottom: 4rem;
+    &__list{
+        @include flex;
+        @include align-center;
+        @include justify-center;
+
+        list-style: none;
+    }
+    &__item{
+
+        &:not(:last-child){
+            margin-right: 1.7rem;
+        }
+    }
+    &__link{
+        display: block;
+        width: 50px;
+        height: 50px;
+        border: 1px solid $blue;
+        border-radius: 50%;
+        text-decoration: none;
+        position: relative;
+        transition: .3s ease;
+
+
+        &:hover{
+            transform: translateY(-5px)
+        }
+    }
+    &__svg{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 25px;
+    }
+    &__path{
+        fill: $blue;
+    }
+}

@@ -8,9 +8,11 @@
 @import "components/header";
 @import "components/footer";
 @import "components/buttons";
+@import "components/form";
 
 //Page Home
 @import "pages/home/partial/banner";
 @import "pages/home/partial/about";
 @import "pages/home/partial/service";
 @import "pages/home/partial/testimonial";
+@import "pages/home/partial/contact";
